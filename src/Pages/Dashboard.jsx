@@ -143,7 +143,7 @@ const Dashboard = () => {
         </Row>
       </Container>
       <Container className="portfolio">
-        <Row className="m-0">
+        <Row className="m-0 pb-4">
           <Col md={6} className="col-12">
             <p className="small-heading">PORTFOLIO</p>
             <p className="heading">Some Of Our Best Works </p>
@@ -152,7 +152,7 @@ const Dashboard = () => {
             <Button data={"Load More"} />
           </Col>
         </Row>
-        <Row className="portfolio-content m-0">
+        <Row className="portfolio-content  m-0">
           <Col sm={5} className="col-12  m-0">
             <img src={portfolio1} />
           </Col>
@@ -190,13 +190,13 @@ const Dashboard = () => {
         </Row> */}
       </Container> 
       <Container className="Blogs-bLock" fluid>
-        <Row className="m-0 pb-5 px-0">
+        <Row className="m-0 pb-5 px-sm-4">
           <Col className="col-12 col-md-6">
             <p className="small-heading">LATEST BLOG</p>
             <p className="heading">Check Some of Latest <br/> News & Articles</p>
           </Col>
           <Col className="col-12 col-md-6 pb-5 pb-md-0 position-relative">
-            <div className="position-absolute top-0 end-0 z-2 pe-5">
+            <div className="_Button pe-5">
             <Button data={"Load More"} />
             </div>
           </Col>
