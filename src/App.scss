@@ -217,6 +217,13 @@ header{
   padding-top: 92px;
   padding-bottom: 92px;
   background-color: #181818;
+  div:nth-child(2){
+    ._Button{
+      position: absolute;
+      right: 0;
+      z-index:1 ;
+    }
+  }
   .blogs-content{
     gap: 70px;
     .Item-box{
@@ -321,6 +328,13 @@ header{
   }
   .Blogs-bLock{
     margin-top: 50px;
+    div:nth-child(2){
+      ._Button{
+        position: absolute;
+        left: 0;
+        z-index:1 ;
+      }
+    }
     .blogs-content{
   
       .Item-box{
