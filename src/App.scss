@@ -1,0 +1,457 @@
+:root{
+  --FS-ExtraBold:170px;
+  --FS-large:20px;
+  --FS-medium:18px;
+  --FS-Xlarge:36px;
+  --FS-XXlarge:40px;
+  --FS-SemiBold:70px;
+  --Color-White:#ffffff;
+  --Color-Black:#000000;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+._Flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li{
+  display: inline-flex;
+}
+
+.heading{
+    font-size: 28px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+}
+.subheading{
+  font-size: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}
+.small-heading {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: linear-gradient(90.51deg, #5635DD -2.48%, #E63573 99.68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.default-btn{
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+}
+.default-btn:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -2px;
+  transform: translate(9px,9px);
+  background: linear-gradient(to right , #4D34E3,  #E93470);
+}
+.Black{
+  color: var(--Color-Black);
+}
+.white{
+  color:var(--Color-White);
+}
+
+header{
+  background-color: var(--Color-White);
+  .header{
+    padding: 12px 0px;
+    .logo{
+      width: 72px;
+      height: 52px;
+      cursor: pointer;
+    }
+    .header-links{
+        ul {
+          display: flex;
+          gap: 36px;
+          padding-right: 57px;
+        }
+    }
+  }
+  
+}
+/*  Banner Block Styling starts */
+
+.banner{
+  padding-top: 63px;
+  .bannerLeft-content{
+      position: relative;
+    p{
+      font-size: var(--FS-ExtraBold);
+      letter-spacing: -0.05em;
+      font-weight: 800;
+    }
+  }
+  .bannerLeft-content p:nth-child(1){
+    position: absolute;
+    right: 40px;
+    z-index: 1;
+    background: linear-gradient(268.86deg, #F43366 0.72%, #3C33EF 103.58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bannerLeft-content p:nth-child(3){
+    padding: 400px 50px 0 0;
+    font-size: var(--FS-large);
+    font-weight: 400;
+  }
+  .bannerLeft-content p:nth-child(2){
+    position: absolute;
+    top: 140px;
+    right: -14%;
+    z-index: 1;
+  }
+  .bannerLeft-content p:nth-child(2) span{
+    color: #fff;
+  }
+}
+
+/*  Banner Block Styling End */
+
+/*  TrustedBrand Block Styling starts */
+
+.TrustedBrand-Block{
+  padding: 172px 0 0 0 ;
+}
+
+/*  TrustedBrand Block Styling End */
+
+/* Feature Block start here */
+.Features-block{
+  padding: 138px 0 0 0;
+  position: relative;
+  .left-content {
+    p:nth-child(1){
+    letter-spacing: 0.15em;
+    background: linear-gradient(90.51deg, #5635DD -2.48%, #E63573 99.68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  button{
+    margin-top: 43px;
+  }
+}
+
+  .right-content{
+    .leftSection{
+      padding: 60px 0 0 0 ;
+      p:nth-child(3){
+        color: #AAAAAA;
+    }
+    }
+     .rightSection{
+        p:nth-child(3){
+            color: #AAAAAA;
+        }
+      
+    }
+    // .rightSection{
+    //   padding:0 60px 0 0 ;
+    // }
+  }
+}
+/* Feature Block End here */
+
+.Workrecords-Block{
+    padding:147px 0 0 0;
+    .Workrecords-content{
+      p:nth-child(1){
+        background: linear-gradient(90.51deg, #5635DD -2.48%, #E63573 99.68%);
+        -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-size: var(--FS-SemiBold);
+          color: var(--Color-White);
+          -webkit-text-stroke: 2px transparent;
+      }
+      p:nth-child(2){
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+}
+
+.portfolio{
+  padding: 213px 0 0 0;
+  .portfolio-content{
+  div{
+    padding: 5px 5px 5px 5px ;
+    img{
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+}
+
+.Blogs-bLock{
+  margin-top: 175px;
+  padding-top: 92px;
+  padding-bottom: 92px;
+  background-color: #181818;
+  .blogs-content{
+    gap: 70px;
+    .Item-box{
+        position: relative;
+        min-height: 530px;
+        img{
+          width: 100%;
+          height: 300px;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+        }
+        div{
+          width: 85%;
+          position: absolute;
+          top: 240px;
+          left: 15%;
+          padding: 2% 5%;
+          background-color: #181818;
+
+            p:nth-child(1){
+              font-size: 13px;
+            }
+            p:nth-child(2){
+              font-size: 30px;
+
+            }
+            p:nth-child(3){
+              font-size: 16px;
+              color: #AAAAAA;
+            }
+            p:nth-child(4){
+              font-size: 16px;
+
+            }
+        }
+    }
+  }
+  p{
+    color: var(--Color-White);
+  }
+}
+
+.Faq-block{
+  background: #181818;
+  padding: 118px;
+  color: var(--Color-White);
+  .FAQright-content{
+    p:nth-child(1){
+        font-size: 14px;
+    }
+    p:nth-child(2){
+      font-size:var(--FS-XXlarge);
+      padding-right:100px ;
+      font-weight: 600;
+    }
+  }
+  .FAQleft-content{
+    div{  
+      background-color: #222222;
+      margin  : 0px  50px 10px 0px;
+      padding : 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+/* Responsive Styling start here */
+
+@media(max-width:992px){
+  :root{
+    --FS-ExtraBold:130px;
+  }
+  .banner .bannerLeft-content p:nth-child(3) {
+    padding: 300px 50px 0 0;
+    font-size: var(--FS-large);
+    font-weight: 400;
+  }
+  .Features-block{
+    .left-content p:nth-child(3){
+      padding: 0 20px 0 0px;
+      font-size: 12px;
+    }
+    .right-content{
+      .leftSection{
+          div {
+            p:nth-child(3){
+            font-size: 12px;
+          }
+        }
+      }
+      .rightSection{
+        div {
+          p:nth-child(3){
+          font-size: 12px;
+        }
+      }
+      }
+    }
+  }
+  .Blogs-bLock{
+    margin-top: 50px;
+    .blogs-content{
+  
+      .Item-box{
+        min-height: 430px;
+          div{
+              p:nth-child(1){
+                font-size: 13px;
+              }
+              p:nth-child(2){
+                font-size: 18px;
+  
+              }
+              p:nth-child(3){
+                font-size: 10px;
+                color: #AAAAAA;
+              }
+              p:nth-child(4){
+                font-size: 16px;
+  
+              }
+          }
+      }
+    }
+    p{
+      color: var(--Color-White);
+    }
+  }
+  .Faq-block{
+
+    padding: 50px;
+ 
+    .FAQright-content{
+      p:nth-child(1){
+          font-size: 14px;
+      }
+      p:nth-child(2){
+        font-size:var(--FS-XXlarge);
+        padding-right:100px ;
+        font-weight: 600;
+      }
+    }
+    .FAQleft-content{
+      div{  
+        background-color: #222222;
+        margin  : 0px  0px 10px 0px;
+        padding : 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+}
+
+@media(max-width:767px){
+  :root{
+    --FS-ExtraBold:62px;
+    --FS-large:16px;
+  }
+  .banner{
+    padding: 0;
+     .bannerLeft-content{
+      order: 2;
+  }
+  .bannerRight-content{
+    order: 1;
+  }
+}
+  .banner {
+  .bannerLeft-content {
+  p:nth-child(2) {
+    position: unset;
+    span{
+      color: var(--Color-Black);
+    }
+  }
+  p:nth-child(3) {
+    position: unset;
+    padding: 0 85px 40px 85px;
+  }
+  }
+  .bannerRight-content{
+    p{
+    margin-top: -100px;
+      color: var(--Color-White);
+      font-size: var(--FS-ExtraBold);
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 800;
+      line-height: 150%; 
+    }
+  }
+}
+.TrustedBrand-Block{
+  padding: 83px 0 0 0 ;
+}
+.Features-block{
+
+  .right-content{
+    padding: 20px 0 0 0 ;
+    .leftSection{
+      padding: 0 0 0 0 ;
+      div{
+        padding: 20px;
+      }
+    }
+    .rightSection{
+      padding:0 0 0 0 ;
+      div{
+        padding: 20px;
+      }
+    }
+  }
+}
+.Faq-block{
+  padding: 50px 20px;
+  .FAQright-content{
+    p:nth-child(2){
+      font-size: 28px;
+      padding-right: 50px;
+    }
+    p:nth-child(3){
+      padding: 30px 0px ;
+    }
+  }
+}
+
+}
+
+
+
+
+
+
+
