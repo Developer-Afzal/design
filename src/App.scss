@@ -76,6 +76,9 @@ ul li{
 header{
   background-color: var(--Color-White);
   .header{
+    img{
+      cursor: pointer;
+    }
     padding: 12px 0px;
     .logo{
       width: 72px;
@@ -85,6 +88,7 @@ header{
     .header-links{
         ul {
           display: flex;
+          flex-direction: column;
           gap: 36px;
           padding-right: 57px;
         }
@@ -299,6 +303,28 @@ header{
   :root{
     --FS-ExtraBold:130px;
   }
+  header{
+    position: relative;
+    .header{
+      .header-links{
+        position: absolute;
+        top: 45px;
+        left: 0;
+        ul {
+          width: 100%;
+          padding-right: 0px;
+          padding-left: 0px;
+          gap: 8px;
+          li{
+          background: linear-gradient(90.51deg, #5635DD -2.48%, #E63573 99.68%);
+          padding: 10px 0px  10px 10px ;
+          color: white;
+        }
+      }
+      }
+    }
+  }
+
   .banner .bannerLeft-content p:nth-child(3) {
     padding: 300px 50px 0 0;
     font-size: var(--FS-large);
@@ -393,6 +419,8 @@ header{
     --FS-ExtraBold:62px;
     --FS-large:16px;
   }
+ 
+
   .banner{
     padding: 0;
      .bannerLeft-content{
