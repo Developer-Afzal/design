@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Row, Col, Container } from "react-bootstrap";
+import Slider from "react-slick";
 import profile from "../assets/Images/profile.svg";
 import Button from "../Components/Commons/Button";
 import TLogo1 from '../assets/Images/T-logo1.svg'
@@ -30,6 +31,45 @@ import user3 from '../assets/Images/user3.svg'
 const Dashboard = () => {
   axios.defaults.withCredentials = true;
   axios.defaults.baseURL = process.env.REACT_APP_BASEURL;
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    responsive:[
+      {
+          breakpoint:1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+      },
+
+      {
+          breakpoint:1000,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+      },
+      
+      {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        
+        },
+  ]
+  };
   return (
     <>
       <Container className="banner">
@@ -282,13 +322,30 @@ const Dashboard = () => {
           </Col>
         </Row>
       </Container>
+       {/* testimonial code starts here*/}
       <Container className="testimonial-block py-4" fluid>
         <Row className="m-0 p-0">
             <Col className="text-center col-12"> <p className="small-heading">Testimonials</p>
               <p className="heading">What our customer say</p></Col>
         </Row>
-        <Row className=" m-0 p-0">
-          <Col md={4} className="col-12 my-4 border-1 ">
+        <Slider className='mx-auto slider my-4' {...settings}>
+        <Col  className="col-12 my-4 border-1 px-1">
+          <img src={comma}/>
+          <p>“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
+          <div className="_Flex justify-content-between"><span> <img src={user1} className="pe-2"/>Berry Gunawan</span> <span className="pe-2"><img src={star}/>3.5</span></div>
+          </Col>
+        <Col className="col-12 my-4 border-1 px-1">
+          <img src={comma}/>
+            <p>“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
+            <div className="_Flex justify-content-between"><span> <img src={user2} className="pe-2"/>Cobocannaeru</span> <span className="pe-2"><img src={star}/>3.5</span></div>
+          </Col>
+        <Col className="col-12 my-4 border-1 px-1">
+          <img src={comma}/>
+          <p>“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
+          <div className="_Flex justify-content-between"><span> <img src={user3} className="pe-2"/>Berry Gunawan</span> <span className="pe-2"><img src={star}/>3.5</span></div>
+          </Col>
+        </Slider>
+          {/* <Col md={4} className="col-12 my-4 border-1 ">
           <img src={comma}/>
           <p>“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
           <div className="_Flex justify-content-between"><span> <img src={user1} className="pe-2"/>Berry Gunawan</span> <span className="pe-2"><img src={star}/>3.5</span></div>
@@ -302,8 +359,7 @@ const Dashboard = () => {
           <img src={comma}/>
           <p>“Now, i can track my business activity with easier and have a great understandable to operate the products</p>
           <div className="_Flex justify-content-between"><span> <img src={user3} className="pe-2"/>Berry Gunawan</span> <span className="pe-2"><img src={star}/>3.5</span></div>
-          </Col>
-        </Row>
+          </Col> */}
       </Container>
       <Container className="Faq-block" fluid>
         <Row className="p-0 m-0">
